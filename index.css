@@ -1,0 +1,108 @@
+@media screen and (max-width: 1440px) {
+  * {
+    -webkit-box-sizing: order-box;
+            box-sizing: order-box;
+    margin: 1%;
+    padding: 0;
+    text-align: center;
+    font-family: 'Libre Franklin';
+  }
+  h1 {
+    color: #969696;
+    font-weight: lighter;
+    font-size: 6vw;
+  }
+  #image {
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+  }
+  #logo {
+    width: 10vw;
+  }
+  .inp-msg {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  input {
+    padding: 3.9%;
+    margin: 0;
+    border-radius: 50px;
+    border-color: #969696;
+    text-align: initial;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 90%;
+  }
+  input:-ms-input-placeholder {
+    font-size: 90%;
+  }
+  input::-ms-input-placeholder {
+    font-size: 90%;
+  }
+  input::placeholder {
+    font-size: 90%;
+  }
+  form {
+    margin-left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*horizontally*/
+  }
+  button {
+    width: 30%;
+    margin: 0;
+    padding: 3%;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: #4f7df3;
+    border: none;
+    font-size: 80%;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+            box-shadow: 5px 10px 18px #888888;
+  }
+  button:hover {
+    background-color: #7ea0f6;
+    cursor: pointer;
+  }
+  .lastword {
+    color: #1b1b1b;
+    font-weight: bold;
+  }
+  #first_p {
+    font-size: 2vw;
+  }
+  #msg {
+    color: red;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .inp-msg, form button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

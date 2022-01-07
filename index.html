@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Libre Franklin' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+      <img  id= "logo" src="./images/logo.svg">
+
+      <h1 > We are launching<span class="lastword"> soon!</span></h1>
+
+      <p id="first_p" >Subscribe and get notified</p>
+      <form>
+        <div class="inp-msg">
+          <input type="text" placeholder="Your email address.."  id="txt"/>
+          <p id="msg"></p>
+        </div>
+          <button class="button" onclick="ValidateEmail(txt.value)" id="btn" >Notify Me</button>
+      </form>
+      <img id="image" src="./images/illustration-dashboard.png">
+      
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      
+  </div>    
+  <footer>
+    <p style="color: hsl(0, 0%, 59%);font-size: 1.5vw;">&copy; Copyright Ping. All rights reserved.</p>
+    <p style="color: hsl(0, 0%, 59%);font-size: 1.5vw;">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Bouzar Amina</a>
+    </p>
+  </footer>
+  <script src="jquery.js"></script>
+  <script lang="javascript">
+
+      function ValidateEmail(mail) 
+      {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+        {
+          document.getElementById("msg").innerHTML="";
+          return (true)
+        }
+          document.getElementById("msg").innerHTML="invalid email address";
+          return (false)
+      }
+  </script>
+</body>
+</html>
